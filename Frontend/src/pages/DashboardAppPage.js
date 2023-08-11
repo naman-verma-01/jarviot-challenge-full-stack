@@ -218,7 +218,7 @@ export default function DashboardAppPage() {
                       />
                       <TableBody >
                         {files.map((row, index) => {
-                          const { name, size, mimeType, id } = row;
+                          const { name, size, mimeType, id, webViewLink } = row;
 
                           return (
                             <TableRow hover key={index} tabIndex={-1} role="checkbox" >
@@ -246,7 +246,11 @@ export default function DashboardAppPage() {
                                 <LoadingButton fullWidth size="large" type="submit" style={{ marginTop: '20px', marginRight: '10px', backgroundColor: 'rgba(250,0,0,0.7)' }} variant="contained" onClick={() => { deleteFileFromDrive(id) }}>
                                   Delete
                                 </LoadingButton>
-                               
+                                 <a href={webViewLink} target='_blank' rel="noreferrer" style={{ marginRight: '10px' }}>
+                                    <LoadingButton fullWidth size="large" type="submit" style={{ marginTop: '20px', marginRight: '10px', }} variant="contained" onClick={() => { }}>
+                                      Open
+                                    </LoadingButton>
+                                  </a>
 
                               </TableCell>
 
@@ -350,7 +354,7 @@ export default function DashboardAppPage() {
                         />
                         <TableBody >
                           {publicAccessFiles.map((row, index) => {
-                            const { name, size, mimeType, id } = row;
+                            const { name, size, mimeType, id, webViewLink } = row;
 
                             return (
                               <TableRow hover key={index} tabIndex={-1} role="checkbox" >
@@ -381,7 +385,11 @@ export default function DashboardAppPage() {
                                   <LoadingButton fullWidth size="large" type="submit" style={{ marginTop: '20px', marginRight: '10px', backgroundColor: 'rgba(250,0,0,0.7)' }} variant="contained" onClick={() => { deleteFileFromDrive(id)}}>
                                     Delete
                                   </LoadingButton>
-
+                                   <a href={webViewLink} target='_blank' rel="noreferrer" style={{ marginRight: '10px' }}>
+                                    <LoadingButton fullWidth size="large" type="submit" style={{ marginTop: '20px', marginRight: '10px', }} variant="contained" onClick={() => { }}>
+                                      Open
+                                    </LoadingButton>
+                                  </a>
 
                                 </TableCell>
                               </TableRow>
