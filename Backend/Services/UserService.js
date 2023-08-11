@@ -71,7 +71,7 @@ const fetchFiles = async (gId) => {
 
         const driveData = await drive.files.list({
             pageSize: 50, // Number of files per page (adjust as needed)
-            fields: 'nextPageToken, files(id, name, mimeType,size)', // Specify the fields we want
+            fields: 'nextPageToken, files(id, name, mimeType,size, webViewLink)', // Specify the fields we want
         });
 
         console.log("FILES ==>", driveData.data.files)
@@ -110,7 +110,7 @@ const fetchAnalytic = async (gId) => {
 
         const driveData = await drive.files.list({
             pageSize: 50, // Number of files per page (adjust as needed)
-            fields: 'nextPageToken, files(id, name, mimeType,size)', // Specify the fields we want
+            fields: 'nextPageToken, files(id, name, mimeType,size, webViewLink)', // Specify the fields we want
         });
 
 
