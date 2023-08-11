@@ -1,6 +1,6 @@
 ## Risk Analysis Dashboard [(Vercel)](https://risk-analyzer-back-xt9b.vercel.app/)
 
-**_NOTE:_**  In order to login please share the email id with the developer to white list the user from Google Cloud Console. (Google does not grant non white listed users to use OAuth on Un-Verified Apps which can possibly take weeks).
+**_NOTE:_**  In order to login please share the email id with the developer (namanvermaca@gmail.com) to white list the user from Google Cloud Console. (Google does not grant non white listed users to use OAuth on Un-Verified Apps which can possibly take weeks).
 
 **_NOTE:_**  This repo does not have any client_id, api key, etc in the .env file of backend due to personal safety reasons. Follow the below steps to set up your own Google Cloud Console project (OR THE EASIER AND QUICKER OPTION WILL BE TO USE THE ABOVE DEPLOYED LINK AND SHARE THE EMAIL ADDRESS THAT WILL BE USED, TO GET THE EMAIL ID WHITE LISTED FOR TESTING PURPOSES). 
 
